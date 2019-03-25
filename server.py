@@ -1,12 +1,12 @@
 import asyncio
+
 import aiohttp_debugtoolbar
 import uvloop
-
+from aiohttp_swagger import *
 from aiohttp import web
 from aiohttp_jwt import JWTMiddleware
 
 from main import settings
-
 
 asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 
@@ -16,6 +16,9 @@ async def init_app(app):
     from main.routes import setup_routes
 
     setup_routes(app)
+
+    if settings.DEBUG:
+        setup_swagger(app, swagger_url='/docs')
 
 
 async def close_app(app):
