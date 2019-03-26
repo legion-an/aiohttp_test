@@ -20,29 +20,26 @@ async def init_app(app):
     if settings.DEBUG:
         setup_swagger(app, swagger_url='/docs')
 
+        # enable debugtoolbar
+        aiohttp_debugtoolbar.setup(app)
+
 
 async def close_app(app):
     pass
 
 
-app = web.Application(
-    middlewares=[
-        settings.DB,
-        JWTMiddleware(settings.SHARED_SECRET_KEY, credentials_required=False)
-    ]
-)
-
-app['settings'] = settings
-app.on_startup.append(init_app)
-app.on_cleanup.append(close_app)
-
-settings.DB.init_app(app, config=settings.DATABASE)
-
-
-# enable debugtoolbar
-if settings.DEBUG:
-    aiohttp_debugtoolbar.setup(app)
-
-
 if __name__ == '__main__':
+    app = web.Application(
+        middlewares=[
+            settings.DB,
+            JWTMiddleware(settings.SHARED_SECRET_KEY, credentials_required=False)
+        ]
+    )
+
+    app['settings'] = settings
+    app.on_startup.append(init_app)
+    app.on_cleanup.append(close_app)
+
+    settings.DB.init_app(app, config=settings.DATABASE)
+
     web.run_app(app, host=settings.HOST, port=settings.PORT)

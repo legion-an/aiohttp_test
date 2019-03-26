@@ -8,7 +8,6 @@ from schematics.models import Model
 from schematics.types import EmailType
 
 from apps.auth.models import User
-from utils.misc import BaseView
 
 
 class UserSchema(Model):

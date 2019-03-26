@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.SCHEMA:aiohttp_test.public</OriginalElement>
+  <nodes>
+    <node x="249.0" y="370.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.space_images</node>
+    <node x="708.75" y="131.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.cities</node>
+    <node x="714.75" y="0.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.regions</node>
+    <node x="0.0" y="310.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.orders</node>
+    <node x="288.25" y="0.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.venues</node>
+    <node x="488.75" y="143.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.features</node>
+    <node x="439.0" y="370.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.space_features</node>
+    <node x="208.0" y="609.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.order_items</node>
+    <node x="13.5" y="0.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.users</node>
+    <node x="0.0" y="855.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.alembic_version</node>
+    <node x="242.5" y="131.0">ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.spaces</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.order_items" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.space_features">
+      <point x="57.25" y="-100.5" />
+      <point x="379.75" y="584.0" />
+      <point x="530.5" y="584.0" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.space_images" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.spaces">
+      <point x="0.0" y="-64.5" />
+      <point x="0.0" y="64.5" />
+    </edge>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.orders" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.users">
+      <point x="-57.25" y="-124.5" />
+      <point x="-43.75" y="40.5" />
+    </edge>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.spaces" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.venues">
+      <point x="45.75" y="-64.5" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.order_items" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.orders">
+      <point x="-57.25" y="-100.5" />
+      <point x="265.25" y="584.0" />
+      <point x="114.5" y="584.0" />
+      <point x="0.0" y="124.5" />
+    </edge>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.cities" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.regions">
+      <point x="0.0" y="-64.5" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.spaces" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.users">
+      <point x="-45.75" y="-64.5" />
+      <point x="288.25" y="106.0" />
+      <point x="144.75" y="106.0" />
+      <point x="43.75" y="40.5" />
+    </edge>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.orders" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.spaces">
+      <point x="57.25" y="-124.5" />
+      <point x="171.75" y="285.0" />
+      <point x="273.0" y="285.0" />
+      <point x="-61.0" y="64.5" />
+    </edge>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.space_features" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.features">
+      <point x="45.75" y="-64.5" />
+      <point x="0.0" y="52.5" />
+    </edge>
+    <edge source="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.space_features" target="ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.spaces">
+      <point x="-45.75" y="-64.5" />
+      <point x="484.75" y="285.0" />
+      <point x="395.0" y="285.0" />
+      <point x="61.0" y="64.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8253275109170306" x="448.0" y="455.5" />
+  <SelectedNodes>
+    <node>ecae1bc2-5467-44d5-9ca0-d8bb6d5e50d1.TABLE:aiohttp_test.public.spaces</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+

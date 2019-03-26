@@ -16,12 +16,13 @@ PORT = '8000'
 
 
 DATABASE = {
-    'drivern': 'postgresql',
-    'username': '',
+    'drivername': 'postgresql',
+    'user': '',
     'password': '',
     'host': '',
     'port': '',
     'database': '',
+    'username': ''
 }
 
 

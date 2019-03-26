@@ -1,6 +1,8 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 from main.settings import DB
 
+__all__ = ['Region', 'City']
+
 
 class Region(DB.Model):
     __tablename__ = 'regions'
